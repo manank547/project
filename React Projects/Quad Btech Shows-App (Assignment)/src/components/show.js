@@ -13,7 +13,7 @@ async function fetchShows(){
     try{
         const response = await fetch("https://api.tvmaze.com/search/shows?q=all");
 const data = await response.json();
-setShows(data);}catch(error){console.log(error);}
+setShows(data)}catch(error){console.log(error);}
 }fetchShows();
 },[]);
 
@@ -30,7 +30,7 @@ return (
 <Card.Text> {data.show.summary?data.show.summary.slice(0,110):""}</Card.Text>
 
 <Card.Text>{data.show.language}<br/>{data.show.genres[0]+" "+data.show.genres[1]}</Card.Text>
-<a href={data.show.url} target="_blank" className="btn btn-primary">Read more</a>
+<a href={data.show.url} target="blank" className="btn btn-primary">Read more</a>
 
 </Card.Body>
 

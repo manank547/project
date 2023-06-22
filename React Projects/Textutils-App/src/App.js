@@ -18,7 +18,7 @@ function App() {
      <Route path="/" element={<Home/>}/>
      <Route path="/textformatter" element={<TextFormatter/>}/>
      <Route path="/counter" element={<Counting/>}/>
-     <Route path="/copy" element={<CopyText/>}/>
+     <Route path="/copy"  element={<CopyText/>}/>
      <Route path="/about" element={<About/>}/>
      <Route path="/home" element={<Home/>}/>
      </Routes>
