@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import TextFormatter from "./components/TextFormatter";
 import Footer from "./components/Footer";
 
+
 function App() {
   return (
     <div className="App">
@@ -26,6 +27,7 @@ function App() {
      </BrowserRouter>
      <Footer/>
      
+   
 
     </div>
   );
