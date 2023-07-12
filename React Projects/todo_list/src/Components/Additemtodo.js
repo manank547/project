@@ -8,7 +8,10 @@ function Additemtodo({addTodo}) {
      if (!title || !desc){
         alert ("Title or Description are missing")
      }
+     else{
      addTodo(title,desc);
+     setTitle("");
+     setDesc("");}
     }
     return (
         <div className="container my-3 mx-50">

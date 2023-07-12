@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom'
 
 export default function Header(props) {
   return (
@@ -13,10 +14,10 @@ export default function Header(props) {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/">Home</a>
+          <Link to="/home" className="nav-link active" aria-current="page" >Home</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/">About</a>
+          <Link to="/about" className="nav-link active" aria-current="page" >About</Link>
         </li>
       </ul>
      {props.searchBar?<form className="d-flex" role="search">

@@ -2,9 +2,9 @@ import React from 'react';
 
 function Footer() {
   let footerStyle={
-    position: "static",
+    position: "relative",
     width:"100%",
-    top:"94vh"
+    top:"0vh"
 
   }
   return (
