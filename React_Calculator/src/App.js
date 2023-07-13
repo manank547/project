@@ -120,7 +120,6 @@ function evaluate({ currentOperand, previousOperand, operation }) {
       default:
         return 'Error';
   }
-
   return computation.toString()
 }
 
